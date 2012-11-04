@@ -43,6 +43,25 @@ module OgoneRails
     95  => "Payment processed by merchant",
     99  => "Being processed"
   }
+
+  ALIAS_GATEWAY_STATUS_CODES = {
+=begin
+	60001057  => I18n.t('ogone.alias.name.miss'),
+	50001174  => I18n.t('ogone.alias.name.to_long'),
+	30141001 => I18n.t('ogone.alias.card.error'),
+	50001069  => I18n.t('ogone.alias.card.type_missmatch'),
+	50001176  => I18n.t('ogone.alias.card.to_long'),
+	50001177  => I18n.t('ogone.alias.card.numeric'),
+	50001178  => I18n.t('ogone.alias.card.to_short'),
+	50001090  =>  I18n.t('ogone.alias.cvc.to_short'),
+	50001179 =>  I18n.t('ogone.alias.cvc.to_long'),
+	50001180 => I18n.t('ogone.alias.cvc.numeric'),
+	50001181 => I18n.t('ogone.alias.date.numeric'),
+	50001182  => I18n.t('ogone.alias.date.invalid'),
+	50001183  => I18n.t('ogone.alias.date.future'),
+	31061001  => "#{I18n.t('ogone.alias.date.wrong')}"
+=end
+}
   
   @pspid    = nil
   @sha_in   = nil

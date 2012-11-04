@@ -39,17 +39,19 @@ module OgoneRails
     def get_params
       # return values in readable format
       @params = {
-        :order_id => (@request['orderID']).to_i,
-        :amount => (@request['amount']).to_f,
-        :currency => @request['currency'],
-        :payment_method => @request['PM'],
-        :acceptance => @request['ACCEPTANCE'],
-        :status => STATUS_CODES[@request['STATUS'].to_i],
+        :order_id => (@request['OrderID']).to_i,
+        :billing_id => (@request['Alias']).to_i,
+        :cardno => @request['CardNo'],
+        :ed => @request['ED'],
+        :status => @request['status'],
         :card_number => @request['CARDNO'],
-        :pay_id => @request['PAYID'],
-        :error => @request['NC ERROR'],
-        :brand => @request['BRAND'],
-        :sha_sign => @request['SHASIGN']
+        :error => (@request['NCError']).to_i,
+        :errorall => [(@request['NCErrorCN']).to_i, (@request['NCErrorCardNo']).to_i, (@request['NCErrorCVC']).to_i, (@request['NCErrorED']).to_i],
+        :carderror => @request['NCErrorCardNo'],
+        :cvcerror => @request['NCErrorCVC'],
+        :ederror => @request['NCErrorED'],
+        :brand => @request['Brand'],
+        :sha_sign => @request['SHASign']
       }
     end
   end

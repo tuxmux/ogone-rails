@@ -1,0 +1,21 @@
+de:
+  ogone:
+    alias:
+       name:
+         miss: Name fehlt
+         to_long: Name ist zu lang
+       card:
+         error: Kartennummer ungültig
+         type_missmatch: Marke und Kartennummer stimmen nicht überein
+         to_long: Kartennummer ist zu lang
+         numeric: Kartennummer enthält nicht-numerische Zeichen
+         to_short: Kartennummer zu kurz/fehlt
+       cvc:
+         to_short: CVC fehlt oder ist zu kurz
+         to_long: CVC zu lang
+         no_numeric: CVC enthält nicht-numerische Zeichen
+       date:
+         no_numeric: Ablaufdatum enthält nicht-numerische Zeichen
+         invalid: Ungültiger Ablaufmonat
+         future: Ablaufdatum muss in der Zukunft liegen
+         wrong: Ablaufdatum fehlt oder in falschem Format
