@@ -28,6 +28,7 @@ module OgoneRails
       
       # Required values
       add_ogone_parameter('PSPID', OgoneRails::pspid)
+      #add_ogone_parameter('BRAND', 'Direct Debits DE')
       #add_ogone_parameter('currency', OgoneRails::currency)
       #add_ogone_parameter('language', OgoneRails::language)
       
@@ -42,6 +43,7 @@ module OgoneRails
         :customer_city      => 'ownertown',
         :customer_country   => 'ownercty',
         :customer_phone     => 'ownertelno',
+	:brand		    => 'BRAND',
         # Feedback url's    
         :accept_url         => 'accepturl',
         :decline_url        => 'declineurl',
