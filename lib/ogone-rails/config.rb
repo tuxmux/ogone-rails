@@ -2,7 +2,7 @@ module OgoneRails
   extend self
   
   TEST_SERVICE_URL = 'https://secure.ogone.com/ncol/test/alias_gateway_utf8.asp'
-  LIVE_SERVICE_URL = 'https://secure.ogone.com/ncol/prod/alias_gateway_ut8.asp'  
+  LIVE_SERVICE_URL = 'https://secure.ogone.com/ncol/prod/alias_gateway_utf8.asp'  
   STATUS_CODES = {
     0   => "Incomplete or invalid",
     1	  => "Cancelled by client",
